@@ -1,0 +1,6 @@
+.product-image[b-fdjv44hj9s] {
+    transition: transform 0.3s ease-in-out;
+}
+ .product-image:hover[b-fdjv44hj9s] {
+    transform: scale(1.05);
+}

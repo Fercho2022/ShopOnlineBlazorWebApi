@@ -1,0 +1,69 @@
+﻿@page "/"
+
+@using ShopOnline.Web.Services.Contracts
+
+
+
+@if (Productos == null)
+{
+    <h3>Loading products...</h3>
+}
+else
+{
+    <h3 class="mb-5">Products</h3>
+
+    // Define the order of categories
+    var orderedCategories = new List<string> { "Beauty", "Electronics", "Furniture", "Shoes" };
+
+    @foreach (var category in orderedCategories)
+    {
+        var categoryProducts = Productos.Where(p => p.CategoryName == category).ToList();
+
+        if (categoryProducts.Count > 0)
+        {
+            <h4>@category</h4>
+            <hr />
+
+            const int itemsPerRow = 4;
+
+            for (int i = 0; i < (categoryProducts.Count + itemsPerRow - 1) / itemsPerRow; i++)
+            {
+                var productRowList = categoryProducts.Skip(i * itemsPerRow).Take(itemsPerRow).ToList();
+                <div class="row mt-3">
+                    <DisplayProduct Products="@productRowList"></DisplayProduct>
+                </div>
+            }
+        }
+    }
+}
+
+
+
+@code {
+
+    //El atributo [Inject] indica a Blazor que debe proporcionar una instancia de
+    //IProductService a esta propiedad.
+    [Inject]
+    public IProductService ProductService { get; set; }
+
+    public IEnumerable<ProductDto> Productos { get; set; }
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Productos = await ProductService.GetItems();
+
+        }
+        catch (Exception ex)
+        {
+
+            throw;
+        }
+
+    }
+
+
+}
