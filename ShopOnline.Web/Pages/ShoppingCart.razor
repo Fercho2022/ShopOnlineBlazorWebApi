@@ -26,9 +26,9 @@ else
                         <div class="mb-4">@item.ProductDescription</div>
                         <span>Price: <b>@item.Price.ToString("C")</b></span>
                         <div>
-                            <a href="#" class="btn btn-danger sm" @onclick="(async () =>await  DeleteCartItem_Click(item.Id))">
-                                <span class="oi oi-credit-card"></span>Eliminar
-                            </a>
+                            <button class="btn btn-danger sm" @onclick="async () =>await  DeleteCartItem_Click(item.Id)">
+                                Eliminar
+                            </button>
 
                         </div>
                     </div>
@@ -76,6 +76,18 @@ else
     {
         var cartItemDto = await ShoppingCartService.DeleteItem(id);
 
+        if(cartItemDto!= null)
+        {
+            RemoveCartItem(id);
+        }
 
     }
+
+    private void RemoveCartItem(int id)
+    {
+
+        ShoppingCartItems= ShoppingCartItems.Where(i => i.Id != id).ToList();
+    }
+
+    
 }

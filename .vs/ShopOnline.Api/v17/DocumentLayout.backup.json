@@ -3,31 +3,16 @@
   "WorkspaceRootPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\repository\\shoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\repository\\shoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\services\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\services\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\pages\\shoppingcart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\pages\\shoppingcart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Fernando\\OneDrive\\Escritorio\\ShopOnline\\ShopOnline.Web\\Pages\\ShoppingCart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\shoponline.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\shoponline.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\services\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\services\\shoppingcartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -38,28 +23,43 @@
       "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\shoponline.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\extensions\\productextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\extensions\\productextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\interfaces\\ishoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\interfaces\\ishoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\pages\\productdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\pages\\productdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\pages\\displayproduct.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\pages\\displayproduct.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\pages\\productdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\pages\\productdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\pages\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\pages\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\repository\\shoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\repository\\shoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Fernando\\OneDrive\\Escritorio\\ShopOnline\\ShopOnline.Web\\Pages\\ShoppingCart.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\shoponline.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|solutionrelative:shoponline.web\\shoponline.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\extensions\\productextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\extensions\\productextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.api\\interfaces\\ishoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3342B13F-BB19-4BFA-82A7-827F62B01CBF}|ShopOnline.Api\\ShopOnline.Api.csproj|solutionrelative:shoponline.api\\interfaces\\ishoppingcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB6A7C55-5A94-4E99-A94D-F7A217117069}|ShopOnline.Web\\ShopOnline.Web.csproj|d:\\api-rest-net\\shoponlineblazorwebapi\\shoponline.web\\pages\\displayproduct.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -136,53 +136,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 31,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "ShoppingCart.razor",
               "DocumentMoniker": "C:\\Users\\Fernando\\OneDrive\\Escritorio\\ShopOnline\\ShopOnline.Web\\Pages\\ShoppingCart.razor",
               "ToolTip": "C:\\Users\\Fernando\\OneDrive\\Escritorio\\ShopOnline\\ShopOnline.Web\\Pages\\ShoppingCart.razor",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAFYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-31T03:06:45.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T03:06:45.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ShopOnline.Api\\Properties\\launchSettings.json",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Properties\\launchSettings.json",
               "RelativeToolTip": "ShopOnline.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-31T03:00:18.173Z"
+              "WhenOpened": "2024-08-31T03:00:18.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ShoppingCartService.cs",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Services\\ShoppingCartService.cs",
               "RelativeDocumentMoniker": "ShopOnline.Web\\Services\\ShoppingCartService.cs",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Services\\ShoppingCartService.cs",
               "RelativeToolTip": "ShopOnline.Web\\Services\\ShoppingCartService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAIAywEcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwDAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T03:04:26.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ShoppingCart.razor",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\ShoppingCart.razor",
               "RelativeDocumentMoniker": "ShopOnline.Web\\Pages\\ShoppingCart.razor",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\ShoppingCart.razor",
               "RelativeToolTip": "ShopOnline.Web\\Pages\\ShoppingCart.razor",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowBwAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAxwCYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-27T02:58:48.967Z",
               "EditorCaption": ""
@@ -240,7 +244,7 @@
               "RelativeDocumentMoniker": "ShopOnline.Web\\Program.cs",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Program.cs",
               "RelativeToolTip": "ShopOnline.Web\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T00:12:42.761Z",
               "EditorCaption": ""
@@ -334,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "ShopOnline.Web.csproj",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\ShopOnline.Web.csproj",
               "RelativeDocumentMoniker": "ShopOnline.Web\\ShopOnline.Web.csproj",
@@ -342,20 +346,20 @@
               "RelativeToolTip": "ShopOnline.Web\\ShopOnline.Web.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-27T00:02:23.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T00:02:23.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "ProductDetails.razor",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\ProductDetails.razor",
               "RelativeDocumentMoniker": "ShopOnline.Web\\Pages\\ProductDetails.razor",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\ProductDetails.razor",
               "RelativeToolTip": "ShopOnline.Web\\Pages\\ProductDetails.razor",
-              "ViewState": "AgIAAEQAAAAAAAAAAIAzwE8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T00:03:34.928Z"
+              "WhenOpened": "2024-08-27T00:03:34.928Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -368,15 +372,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "Products.razor",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\Products.razor",
               "RelativeDocumentMoniker": "ShopOnline.Web\\Pages\\Products.razor",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\Products.razor",
               "RelativeToolTip": "ShopOnline.Web\\Pages\\Products.razor",
-              "ViewState": "AgIAACoAAAAAAAAAAABOwA4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T00:01:52.739Z"
+              "WhenOpened": "2024-08-27T00:01:52.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -389,15 +394,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "DisplayProduct.razor",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\DisplayProduct.razor",
               "RelativeDocumentMoniker": "ShopOnline.Web\\Pages\\DisplayProduct.razor",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\Pages\\DisplayProduct.razor",
               "RelativeToolTip": "ShopOnline.Web\\Pages\\DisplayProduct.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAABOwB0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T00:00:37.129Z"
+              "WhenOpened": "2024-08-27T00:00:37.129Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -454,19 +460,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "ShoppingCartController.cs",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Controllers\\ShoppingCartController.cs",
               "RelativeDocumentMoniker": "ShopOnline.Api\\Controllers\\ShoppingCartController.cs",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Controllers\\ShoppingCartController.cs",
               "RelativeToolTip": "ShopOnline.Api\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAADwv8IAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAqwJwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T20:40:33.09Z"
+              "WhenOpened": "2024-08-25T20:40:33.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "ShopOnline.Api.csproj",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\ShopOnline.Api.csproj",
               "RelativeDocumentMoniker": "ShopOnline.Api\\ShopOnline.Api.csproj",
@@ -474,11 +481,12 @@
               "RelativeToolTip": "ShopOnline.Api\\ShopOnline.Api.csproj",
               "ViewState": "AgIAAA8AAAAAAAAAAAAUwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-25T20:35:46.322Z"
+              "WhenOpened": "2024-08-25T20:35:46.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Program.cs",
               "RelativeDocumentMoniker": "ShopOnline.Api\\Program.cs",
@@ -486,25 +494,24 @@
               "RelativeToolTip": "ShopOnline.Api\\Program.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T20:33:58.221Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-25T20:33:58.221Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "ShoppingCartRepository.cs",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Repository\\ShoppingCartRepository.cs",
               "RelativeDocumentMoniker": "ShopOnline.Api\\Repository\\ShoppingCartRepository.cs",
               "ToolTip": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Repository\\ShoppingCartRepository.cs",
               "RelativeToolTip": "ShopOnline.Api\\Repository\\ShoppingCartRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowB8AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T20:32:30.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "IShoppingCartRepository.cs",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Interfaces\\IShoppingCartRepository.cs",
               "RelativeDocumentMoniker": "ShopOnline.Api\\Interfaces\\IShoppingCartRepository.cs",
@@ -516,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "ProductExtensions.cs",
               "DocumentMoniker": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\Extensions\\ProductExtensions.cs",
               "RelativeDocumentMoniker": "ShopOnline.Api\\Extensions\\ProductExtensions.cs",

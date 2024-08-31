@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ShopOnline.Web",
   "resources": {
-    "hash": "sha256-jf5HvSTq+ndol8aSEyXHqjWBBmNTzxQ2mSjr+ECX6Bo=",
+    "hash": "sha256-l21pTG7GFqgJZoUkQbLApSiCQ7chgHPTtwULSUF3oCM=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.ezodgwjfes.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -209,11 +209,11 @@
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
       "ShopOnline.Models.wasm": "sha256-HD8gSqrThwtlgaVA1Fk/V4rndqJP97beHPCGzPdT5UA=",
-      "ShopOnline.Web.wasm": "sha256-q0fth26kw/0EjogJ/QqBvuoAYAGyjckhN5mhzRGp9rY="
+      "ShopOnline.Web.wasm": "sha256-xsgsxLZkEXqpt/jPjWbrJdzeaGBs4jr179dQ/zDu0oE="
     },
     "pdb": {
       "ShopOnline.Models.pdb": "sha256-dB5G3Z4ecIhjuWMq/0yZdTRbfUXyeCnlo8ZVIVCwQmY=",
-      "ShopOnline.Web.pdb": "sha256-6VAqL/zSdM0cHm0viAoar7lEbbftdaaDCi9mPBDwBZM="
+      "ShopOnline.Web.pdb": "sha256-ABtjECy/S5jaWRcFfvjLfi9/a0HRV4YprcV7a/pHX4M="
     }
   },
   "cacheBootResources": true,

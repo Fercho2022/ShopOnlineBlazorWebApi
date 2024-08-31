@@ -50,7 +50,7 @@ namespace ShopOnline.Web.Services
         {
             try
             {
-                var response = await _httpClient.DeleteAsync($"api/ShoppingCart/{id}");
+                var response = await _httpClient.DeleteAsync($"api/ShoppingCart/deleteItem/{id}");
 
                 if (response.IsSuccessStatusCode)
                 {
