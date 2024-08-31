@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.7",
           "ShopOnline.Models": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "System.Text.Encoding": "4.3.0"
         },
         "runtime": {
           "ShopOnline.Api.dll": {}
@@ -909,7 +910,10 @@
       },
       "ShopOnline.Models/1.0.0": {
         "runtime": {
-          "ShopOnline.Models.dll": {}
+          "ShopOnline.Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

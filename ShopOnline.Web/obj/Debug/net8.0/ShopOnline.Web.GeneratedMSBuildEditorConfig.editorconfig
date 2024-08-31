@@ -13,55 +13,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = ShopOnline.Web
 build_property.RootNamespace = ShopOnline.Web
-build_property.ProjectDir = D:\API-REST-NET\ShopOnline\ShopOnline.Web\
+build_property.ProjectDir = D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\API-REST-NET\ShopOnline\ShopOnline.Web
+build_property.MSBuildProjectDirectory = D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/App.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Pages/Counter.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Pages/ProductDetails.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/ProductDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Pages/Products.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/Products.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Pages/ShoppingCart.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/ShoppingCart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcHBpbmdDYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Pages/Weather.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/_Imports.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Layout/MainLayout.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-bv80zqv4hh
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Layout/NavMenu.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-p5w0gxznvc
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Pages/DisplayProduct.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/DisplayProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVByb2R1Y3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fdjv44hj9s
 
-[D:/API-REST-NET/ShopOnline/ShopOnline.Web/Pages/DisplaySpinner.razor]
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/DisplaySpinner.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVNwaW5uZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-p9f7rduw4v

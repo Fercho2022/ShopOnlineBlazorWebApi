@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Web\\ShopOnline.Web.csproj": {}
+    "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\ShopOnline.Web.csproj": {}
   },
   "projects": {
-    "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj": {
+    "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj",
+        "projectUniqueName": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj",
         "projectName": "ShopOnline.Models",
-        "projectPath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj",
+        "projectPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj",
         "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-        "outputPath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\obj\\",
+        "outputPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,18 +61,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Web\\ShopOnline.Web.csproj": {
+    "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\ShopOnline.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Web\\ShopOnline.Web.csproj",
+        "projectUniqueName": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\ShopOnline.Web.csproj",
         "projectName": "ShopOnline.Web",
-        "projectPath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Web\\ShopOnline.Web.csproj",
+        "projectPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\ShopOnline.Web.csproj",
         "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-        "outputPath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Web\\obj\\",
+        "outputPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj": {
-                "projectPath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj"
+              "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj": {
+                "projectPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj"
               }
             }
           }
@@ -123,13 +123,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.7, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.7, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             }
           },
@@ -147,7 +147,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.7, 8.0.7]"
+              "version": "[8.0.8, 8.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -155,7 +155,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

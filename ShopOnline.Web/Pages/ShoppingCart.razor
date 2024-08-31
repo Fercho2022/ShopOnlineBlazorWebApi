@@ -25,6 +25,12 @@ else
                         <h5>@item.ProductName</h5>
                         <div class="mb-4">@item.ProductDescription</div>
                         <span>Price: <b>@item.Price.ToString("C")</b></span>
+                        <div>
+                            <a href="#" class="btn btn-danger sm" @onclick="(async () =>await  DeleteCartItem_Click(item.Id))">
+                                <span class="oi oi-credit-card"></span>Eliminar
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             }
@@ -64,5 +70,12 @@ else
 
             ErrorMessage = ex.Message;
         }
+    }
+
+    protected async Task DeleteCartItem_Click(int id)
+    {
+        var cartItemDto = await ShoppingCartService.DeleteItem(id);
+
+
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lyZq+E4OocU=",
+  "dgSpecHash": "qSQbLjp+Wxg=",
   "success": true,
-  "projectFilePath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj",
+  "projectFilePath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

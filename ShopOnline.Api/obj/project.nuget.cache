@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sVlWpFVSVa4=",
+  "dgSpecHash": "Xq+XshA6pcE=",
   "success": true,
-  "projectFilePath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Api\\ShopOnline.Api.csproj",
+  "projectFilePath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Api\\ShopOnline.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fernando\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Fernando\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

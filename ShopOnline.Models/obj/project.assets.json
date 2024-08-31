@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj",
+      "projectUniqueName": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj",
       "projectName": "ShopOnline.Models",
-      "projectPath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\ShopOnline.Models.csproj",
+      "projectPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\ShopOnline.Models.csproj",
       "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-      "outputPath": "D:\\API-REST-NET\\ShopOnline\\ShopOnline.Models\\obj\\",
+      "outputPath": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
