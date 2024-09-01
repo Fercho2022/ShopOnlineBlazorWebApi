@@ -89,7 +89,7 @@ namespace ShopOnline.Api.Extensions
 
         }
 
-        public static CartItemDto CovertToDto(this CartItem cartItem, Product product)
+        public static CartItemDto ConvertToDto(this CartItem cartItem, Product product)
         {
             return new CartItemDto()
             {

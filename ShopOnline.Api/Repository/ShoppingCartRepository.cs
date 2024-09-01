@@ -113,6 +113,25 @@ namespace ShopOnline.Api.Repository
 
             return carItem;
         }
+
+        public async Task<CartItem> UpdateQty(int id, CartItemQtyUpdateDto cartItemQtyUpdateDto)
+        {
+            // Buscar el CartItem por su ID
+            var cartItem = await _context.CartItems.FirstOrDefaultAsync(ci => ci.Id == id);
+
+            if (cartItem != null)
+            {
+                // Actualizar la cantidad
+                cartItem.Qty = cartItemQtyUpdateDto.Qty;
+
+                // Guardar los cambios en la base de datos
+                await _context.SaveChangesAsync();
+
+                return cartItem;
+            }
+
+            return null; // Retornar null si no se encontró el CartItem
+        }
     }
 }
 

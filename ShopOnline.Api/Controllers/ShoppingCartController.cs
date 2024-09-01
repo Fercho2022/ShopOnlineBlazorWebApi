@@ -76,7 +76,7 @@ namespace ShopOnline.Api.Controllers
 
                 var product= await _productRepository.GetItemById(cartItem.ProductId);
 
-                var cartItemDto= cartItem.CovertToDto(product);
+                var cartItemDto= cartItem.ConvertToDto(product);
 
                 return Ok(cartItemDto);
 
@@ -109,7 +109,7 @@ namespace ShopOnline.Api.Controllers
                     throw new Exception($"Something went wrong when attempting to retrieve product(productId:{cartItemToAddDto.ProductId})");
                 }
 
-                var cartItemDto = cartItem.CovertToDto(product);
+                var cartItemDto = cartItem.ConvertToDto(product);
 
                 //CreatedAtAction: Este método devuelve una respuesta HTTP con el código de estado
                 //201 Created, que es el código de respuesta adecuado cuando se
@@ -163,7 +163,7 @@ namespace ShopOnline.Api.Controllers
 
                 var product= await _productRepository.GetItemById(deleteCartItem.ProductId);
 
-                var cartItemDto=deleteCartItem.CovertToDto(product);
+                var cartItemDto=deleteCartItem.ConvertToDto(product);
 
                 return Ok(cartItemDto);
             }
@@ -174,13 +174,39 @@ namespace ShopOnline.Api.Controllers
             }
 
         }
-        //public Task<CartItem> UpdateQty(int id, CartItemQtyUpdateDto cartItemQtyUpdateDto)
-        //{
+        [HttpPatch("{id:int}")]
+        public async Task<ActionResult<CartItemDto>> UpdateQty(int id, [FromBody] CartItemQtyUpdateDto cartItemQtyUpdateDto)
+        {
+            try
+            {
+                var updatedCartItem=await _shoppingCartRepository.UpdateQty(id, cartItemQtyUpdateDto);
+
+                if(updatedCartItem == null)
+                {
+                    return NotFound("CartItem not found");
+                }
+
+                var product= await _productRepository.GetItemById(updatedCartItem.ProductId);
+               
+                if(product == null)
+                {
+                    return NotFound("Associated product not found.");
+                }
+
+                var cartItemDto = updatedCartItem.ConvertToDto(product);
+
+                return Ok(cartItemDto);
+
+            }
+            catch (Exception ex)
+            {
+
+               return StatusCode(StatusCodes.Status500InternalServerError, $"Error updating quantity: {ex.Message}");
+            }
 
 
 
-
-        //}
+        }
 
     }
 

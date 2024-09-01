@@ -13,38 +13,56 @@ else if (ErrorMessage != null)
 else
 {
     <h3 class="mb-5">Shopping Cart</h3>
-    <div class = "row mb-5">
-        <div class ="col-md-9">
-            @foreach(var item in ShoppingCartItems)
-            {
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <img src="@item.ProductImageURL" width="300" class="img-thumbnail">
-                    </div>
-                    <div class = "col-md-8">
-                        <h5>@item.ProductName</h5>
-                        <div class="mb-4">@item.ProductDescription</div>
-                        <span>Price: <b>@item.Price.ToString("C")</b></span>
-                        <div>
-                            <button class="btn btn-danger sm" @onclick="async () =>await  DeleteCartItem_Click(item.Id)">
-                                Eliminar
-                            </button>
+    @if (ShoppingCartItems.Count() > 0)
+    {
+        <div class="row mb-5">
+            <div class="col-md-9">
+                @foreach (var item in ShoppingCartItems)
+                {
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <img src="@item.ProductImageURL" width="300" class="img-thumbnail">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>@item.ProductName</h5>
+                            <div class="mb-2">@item.ProductDescription</div>
+                            <span>Price: <b>@item.Price.ToString("C")</b>
+                                                         
+                                <input type="number" @bind="@item.Qty"/>
+                                <button class="btn btn-info btn-sm"
+                                        @onclick="() => UpdateQtyCartItem_Click(item.Id, item.Qty)">
 
+                                     Update Qty
+                                </button>
+                            </span>
+                            <div>
+
+                                <button class="btn btn-danger mt-2"
+                                        @onclick="async () => await DeleteCartItem_Click(item.Id)">
+                                    <i class="fa fa-trash fa-lg"></i>
+                                </button>
+                            </div>
+                           
                         </div>
                     </div>
+                }
+            </div>
+            <div class="col-md-3">
+                <h5>Cart Summary</h5>
+                <div class="mt-2">
+                    <div>Total - (@TotalQuantity items)&nbsp;<b>@TotalPrice</b></div>
+                    <a href="#" class="btn btn-success">
+                        <span class="oi oi-credit-card"></span>&nbsp; Proceed to Checkout
+                    </a>
                 </div>
-            }
-        </div>
-        <div class="col-md-3">
-            <h5>Cart Summary</h5>
-            <div class="mt-2">
-                <div>Total - </div>
-                <a href="#" class="btn btn-success">
-                    <span class="oi oi-credit-card"></span>&nbsp; Proceed to Checkout 
-                </a>
             </div>
         </div>
-    </div>
+    }
+    else
+    {
+        <h4>There are currently no items in your shopping cart</h4>
+    }
+
 }
 
 
@@ -58,11 +76,19 @@ else
 
     public string ErrorMessage { get; set; }
 
+    protected string TotalPrice { get; set; }
+
+    protected int TotalQuantity { get; set; }
+
+
+
     protected override async Task OnInitializedAsync()
     {
         try
         {
             ShoppingCartItems = await ShoppingCartService.GetItems(HardCoded.UserId);
+
+            CalculateCartSummaryTotal();
 
         }
         catch (Exception ex)
@@ -78,16 +104,94 @@ else
 
         if(cartItemDto!= null)
         {
-            RemoveCartItem(id);
+            ShoppingCartItems = ShoppingCartItems.Where(i => i.Id != id).ToList();
+
+            CalculateCartSummaryTotal();
         }
 
     }
 
-    private void RemoveCartItem(int id)
+
+
+    protected async Task UpdateQtyCartItem_Click(int id, int qty)
     {
 
-        ShoppingCartItems= ShoppingCartItems.Where(i => i.Id != id).ToList();
+        try
+        {
+            if (qty > 0)
+            {
+                var updateItemDto = new CartItemQtyUpdateDto
+                    {
+                        CartItemId = id,
+                        Qty = qty
+                    };
+
+                var returnedUpdateItemDto= await ShoppingCartService.UpdateQty(id, updateItemDto);
+
+                UpdateItemTotalprice(returnedUpdateItemDto);
+
+                CalculateCartSummaryTotal();
+
+            }
+            else
+            {
+                var item = ShoppingCartItems.FirstOrDefault(i => i.Id == id);
+
+                if (item != null)
+                {
+                    item.Qty = 1;
+                    item.TotalPrice = item.Price;
+                }
+            }
+
+
+
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+
+
     }
 
-    
+    private void SetTotalPrice()
+    {
+        TotalPrice = ShoppingCartItems.Sum(p => p.TotalPrice).ToString("C");
+    }
+
+    private void SetTotalQuantity()
+    {
+        TotalQuantity = ShoppingCartItems.Sum(q => q.Qty);
+    }
+
+    private void CalculateCartSummaryTotal()
+    {
+        SetTotalPrice();
+        SetTotalQuantity();
+    }
+
+    private void UpdateItemTotalprice(CartItemDto cartItemDto)
+    {
+
+        //Aqui item es la referencia al objeto que se encuentra dentro del ShoppingCartItems
+        // por eso modificando su TotalPrice luego este valor se ve modificado dentro del objeto
+        // CartItemDto del ShoppingCartItems
+
+        var item = GetCartItem(cartItemDto.Id);
+
+        if (item != null)
+        {
+            item.TotalPrice = cartItemDto.Price * cartItemDto.Qty;
+        }
+
+    }
+    private CartItemDto GetCartItem(int id)
+    {
+        // devuelve una referencia al objeto CartItemDto especificado por su busqueda Id
+        return ShoppingCartItems.FirstOrDefault(i => i.Id == id);
+    }
+
+
 }

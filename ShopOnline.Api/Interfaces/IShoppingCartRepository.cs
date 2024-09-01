@@ -9,7 +9,7 @@ namespace ShopOnline.Api.Interfaces
 
         Task<CartItem> AddItem(CartItemToAddDto cartItemToAddDto);
 
-        //Task<CartItem> UpdateQty(int id, CartItemQtyUpdateDto cartItemQtyUpdateDto);
+        Task<CartItem> UpdateQty(int id, CartItemQtyUpdateDto cartItemQtyUpdateDto);
 
         Task<CartItem> DeleteItem(int id); 
 

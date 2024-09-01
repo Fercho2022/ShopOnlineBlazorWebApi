@@ -15,6 +15,8 @@ namespace ShopOnline.Web.Services.Contracts
 
         Task<CartItemDto> DeleteItem(int id);
 
+        Task<CartItemDto> UpdateQty(int id, CartItemQtyUpdateDto cartItemQtyUpdateDto);
+
 
     }
 }

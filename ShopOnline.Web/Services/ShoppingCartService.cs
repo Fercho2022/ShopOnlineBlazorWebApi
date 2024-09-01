@@ -137,5 +137,37 @@ namespace ShopOnline.Web.Services
 
 
         }
+
+        public async Task<CartItemDto> UpdateQty(int id, CartItemQtyUpdateDto cartItemQtyUpdateDto)
+        {
+            try
+            {
+                //PatchAsJsonAsync serializa automaticamente al cuerpo del objeto cartItemQtyUpdateDto como un Json
+                var response = await _httpClient.PatchAsJsonAsync<CartItemQtyUpdateDto>($"api/ShoppingCart/{id}", cartItemQtyUpdateDto);
+
+                // Verifica si la respuesta fue exitosa
+                if (response.IsSuccessStatusCode)
+                {
+
+                    // Lee y devuelve el resultado como CartItemDto
+                    return await response.Content.ReadFromJsonAsync<CartItemDto>();
+                }
+
+                else
+                {
+                    // Maneja el caso en que la respuesta no sea exitosa
+                    // // Lee el contenido de la respuesta como una cadena de texto.
+                    var message = await response.Content.ReadAsStringAsync();
+
+                    throw new HttpRequestException($"Error updating quantity: {message}");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                // Maneja excepciones de manera adecuada
+                throw new ApplicationException($"Error in {nameof(UpdateQty)}: {ex.Message}", ex);
+            }
+        }
     }
 }
