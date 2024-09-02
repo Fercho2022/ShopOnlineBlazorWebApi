@@ -90,7 +90,7 @@ else
         {
             ShoppingCartItems = await ShoppingCartService.GetItems(HardCoded.UserId);
 
-            CalculateCartSummaryTotal();
+            CartChanged();
 
         }
         catch (Exception ex)
@@ -108,7 +108,7 @@ else
         {
             ShoppingCartItems = ShoppingCartItems.Where(i => i.Id != id).ToList();
 
-            CalculateCartSummaryTotal();
+            CartChanged();
         }
 
     }
@@ -132,7 +132,7 @@ else
 
                 UpdateItemTotalprice(returnedUpdateItemDto);
 
-                CalculateCartSummaryTotal();
+                CartChanged();
 
                 await Js.InvokeVoidAsync("MakeUpdateQtyButtonVisible", id, false);
 
@@ -197,10 +197,19 @@ else
         return ShoppingCartItems.FirstOrDefault(i => i.Id == id);
     }
 
+
     protected async Task UpdateQty_Input(int id)
     {
-        
+
+        //Js.InvokeVoidAsync: Es un método utilizado en Blazor para invocar funciones JavaScript desde el código
+        //  C#. Aquí se llama a la función JavaScript MakeUpdateQtyButtonVisible.
 
         await Js.InvokeVoidAsync("MakeUpdateQtyButtonVisible", id, true);
+    }
+
+    private void CartChanged()
+    {
+        CalculateCartSummaryTotal();
+        ShoppingCartService.RaiseEventOnShoppingCartChanged(TotalQuantity);
     }
 }

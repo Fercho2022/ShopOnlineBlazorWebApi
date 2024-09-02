@@ -41,10 +41,13 @@ else
 
 @code {
 
-    //El atributo [Inject] indica a Blazor que debe proporcionar una instancia de
-    //IProductService a esta propiedad.
+    // El atributo [Inject] indica a Blazor que debe proporcionar una instancia de
+    // IProductService a esta propiedad.
     [Inject]
     public IProductService ProductService { get; set; }
+
+    [Inject]
+    public IShoppingCartService ShoppingCartService { get; set; }
 
     public IEnumerable<ProductDto> Productos { get; set; }
 
@@ -55,6 +58,12 @@ else
         try
         {
             Productos = await ProductService.GetItems();
+
+            var shoppingCartItems = await ShoppingCartService.GetItems(HardCoded.UserId);
+
+            var totalQty=shoppingCartItems.Sum(i => i.Qty);
+
+            ShoppingCartService.RaiseEventOnShoppingCartChanged(totalQty);
 
         }
         catch (Exception ex)
