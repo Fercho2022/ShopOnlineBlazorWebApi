@@ -38,10 +38,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/ShoppingCart.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcHBpbmdDYXJ0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -65,3 +61,7 @@ build_metadata.AdditionalFiles.CssScope = b-fdjv44hj9s
 [D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/DisplaySpinner.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVNwaW5uZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-p9f7rduw4v
+
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/ShoppingCart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcHBpbmdDYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-2o7k8o7qyw

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IBul+t++QUl49/DnoiLTgsQqE0dJJ9nWEBJk2rVBZjE=",
+  "Hash": "hnY7/EHCv//POtrKtGGRIq86/f7kRyU06fgUfMLCUpY=",
   "Source": "ShopOnline.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -8432,6 +8432,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\js\\ShoppingCartFunctions.js",
+      "SourceId": "ShopOnline.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/ShoppingCartFunctions.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ShoppingCartFunctions.js"
     },
     {
       "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\sample-data\\weather.json",

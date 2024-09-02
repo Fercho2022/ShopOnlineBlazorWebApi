@@ -2083,3 +2083,4 @@ D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\ShopOnlin
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\refint\ShopOnline.Web.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\ShopOnline.Web.pdb
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\ref\ShopOnline.Web.dll
+D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css
