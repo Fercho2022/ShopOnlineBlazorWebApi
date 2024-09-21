@@ -1,8 +1,13 @@
+using MercadoPago.Client.CardToken;
+using MercadoPago.Client.Customer;
+using MercadoPago.Client.Payment;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Net.Http.Headers;
 using ShopOnline.Api.Data;
 using ShopOnline.Api.Interfaces;
 using ShopOnline.Api.Repository;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +16,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+
+
+// Registro de servicios de MercadoPago
+
 
 builder.Services.AddDbContext<DataContext>(options =>
 {

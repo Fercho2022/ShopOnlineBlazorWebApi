@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hnY7/EHCv//POtrKtGGRIq86/f7kRyU06fgUfMLCUpY=",
+  "Hash": "oHEqCz9L7TDBh/pyHFdWOtgGCY8s6WZuaQ1rxPLICDk=",
   "Source": "ShopOnline.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -8432,6 +8432,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\js\\MercadoPago.js",
+      "SourceId": "ShopOnline.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/MercadoPago.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\MercadoPago.js"
     },
     {
       "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\js\\ShoppingCartFunctions.js",

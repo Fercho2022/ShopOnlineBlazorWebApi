@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\js\\MercadoPago.js",
+      "PackagePath": "staticwebassets\\js\\MercadoPago.js"
+    },
+    {
       "Id": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\wwwroot\\js\\ShoppingCartFunctions.js",
       "PackagePath": "staticwebassets\\js\\ShoppingCartFunctions.js"
     },

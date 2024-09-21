@@ -1870,6 +1870,7 @@ D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\Pages\DisplayProduct.razor.rz.scp.css
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\Pages\DisplaySpinner.razor.rz.scp.css
+D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\bundle\ShopOnline.Web.styles.css
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\projectbundle\ShopOnline.Web.bundle.scp.css
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\compressed\7rrllcnoso.gz
@@ -2083,4 +2084,3 @@ D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\ShopOnlin
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\refint\ShopOnline.Web.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\ShopOnline.Web.pdb
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\ref\ShopOnline.Web.dll
-D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Web\obj\Debug\net8.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css

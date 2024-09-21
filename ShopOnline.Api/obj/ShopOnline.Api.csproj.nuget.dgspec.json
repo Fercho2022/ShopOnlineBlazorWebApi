@@ -77,6 +77,10 @@
             "System.Text.Encoding": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "mercadopago-sdk": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

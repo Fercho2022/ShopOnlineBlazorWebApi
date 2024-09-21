@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "ShopOnline.Api.Controllers.PaymentsController",
+    "Method": "CreatePreference",
+    "RelativePath": "api/Payments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShopOnline.Models.Dtos.PaymentRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ShopOnline.Api.Controllers.ProductController",
     "Method": "GetProducts",
     "RelativePath": "api/Product",

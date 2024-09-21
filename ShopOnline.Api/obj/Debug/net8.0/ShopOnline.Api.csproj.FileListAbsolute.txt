@@ -301,6 +301,7 @@ D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\ShopOnlin
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Azure.Core.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Azure.Identity.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Humanizer.dll
+D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\MercadoPago.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -325,6 +326,7 @@ D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Microsoft
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\API-REST-NET\ShopOnlineBlazorWebApi\ShopOnline.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
