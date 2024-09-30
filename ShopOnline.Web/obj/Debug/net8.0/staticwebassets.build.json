@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oHEqCz9L7TDBh/pyHFdWOtgGCY8s6WZuaQ1rxPLICDk=",
+  "Hash": "mloEkUawZeiPnJEmjAj/mmEz0f+5Tz7FgoPK5MhliGM=",
   "Source": "ShopOnline.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Fernando\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.7\\build\\net8.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "SourceId": "ShopOnline.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\obj\\Debug\\net8.0\\webcil\\Blazored.LocalStorage.wasm"
     },
     {
       "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
@@ -6190,6 +6209,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.CSharp.wasm"
+    },
+    {
+      "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\obj\\Debug\\net8.0\\compressed\\kctk70ctiv.gz",
+      "SourceId": "ShopOnline.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm"
     },
     {
       "Identity": "D:\\API-REST-NET\\ShopOnlineBlazorWebApi\\ShopOnline.Web\\obj\\Debug\\net8.0\\compressed\\lb4ovuqalx.gz",

@@ -74,7 +74,7 @@ namespace ShopOnline.Api.Controllers
                     return NotFound();
                 }
 
-                var product= await _productRepository.GetItemById(cartItem.ProductId);
+                var product= await _productRepository.GetItem(cartItem.ProductId);
 
                 var cartItemDto= cartItem.ConvertToDto(product);
 
@@ -102,7 +102,7 @@ namespace ShopOnline.Api.Controllers
                 }
 
 
-                var product =await  _productRepository.GetItemById(cartItem.ProductId);
+                var product =await  _productRepository.GetItem(cartItem.ProductId);
                
                 if(product == null)
                 {
@@ -161,7 +161,7 @@ namespace ShopOnline.Api.Controllers
                     return NotFound("Cart item not found.");
                 }
 
-                var product= await _productRepository.GetItemById(deleteCartItem.ProductId);
+                var product= await _productRepository.GetItem(deleteCartItem.ProductId);
 
                 var cartItemDto=deleteCartItem.ConvertToDto(product);
 
@@ -186,7 +186,7 @@ namespace ShopOnline.Api.Controllers
                     return NotFound("CartItem not found");
                 }
 
-                var product= await _productRepository.GetItemById(updatedCartItem.ProductId);
+                var product= await _productRepository.GetItem(updatedCartItem.ProductId);
                
                 if(product == null)
                 {

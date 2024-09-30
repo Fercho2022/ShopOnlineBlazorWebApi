@@ -19,13 +19,13 @@ namespace ShopOnline.Api.Controllers
         }
 
         [HttpGet()]
-        public async Task<ActionResult<IEnumerable<ProductDto>>> GetProducts()
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetItems()
         {
             try
             {
                 var products = await _productRepository.GetItems();
-                var categories = await _productRepository.GetAllCategories();
-                if (products == null || categories == null)
+               
+                if (products == null )
                 {
                     return NotFound();
 
@@ -34,7 +34,7 @@ namespace ShopOnline.Api.Controllers
                 else
                 {
                     //invoca al metodo de extensión de la clase static ProductExtensions
-                    var productDtos = products.ConvertToProductDto(categories);
+                    var productDtos = products.ConvertToDto();
 
                     // Devolver la lista de ProductDto
                    
@@ -57,7 +57,7 @@ namespace ShopOnline.Api.Controllers
         {
             try
             {
-                var product = await _productRepository.GetItemById(id);
+                var product = await _productRepository.GetItem(id);
                
                 if (product == null)
                 {
@@ -65,19 +65,14 @@ namespace ShopOnline.Api.Controllers
 
 
                 }
-                else
-                {
+               
 
-                    var productCategory = await _productRepository.GetCategoryById(product.CategoryId);
+                   
                     //invoca al metodo de extensión de la clase static ProductExtensions
-                    var productDto = product.ConvertToProductDto(productCategory);
+                    var productDto = product.ConvertToDto();
 
                     // Devolver la lista de ProductDto
                     return Ok(productDto);
-
-                }
-
-
 
             }
             catch (Exception ex)
@@ -88,6 +83,57 @@ namespace ShopOnline.Api.Controllers
             }
 
         }
+
+        [HttpGet("productCategories")]
+        public async Task<ActionResult<IEnumerable<ProductCategoryDto>>> GetProductCategories()
+        {
+            try
+            {
+                var productCategories = await _productRepository.GetCategories();
+
+                if(productCategories == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    var productCategoryDto = productCategories.ConvertToDto();
+                   
+                    return Ok(productCategoryDto);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                // Manejar la excepción y devolver una respuesta de error genérica
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
+            }
+        }
+
+        [HttpGet("{categoryId}/GetItemsByCategory")]
+
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetItemsByCategory(int categoryId)
+        {
+            try
+            {
+                // Obtener productos con las categorías incluidas en una sola consulta
+                var products = await _productRepository.GetItemsByCategory(categoryId);
+
+              
+                var productDtos= products.ConvertToDto();
+
+                return Ok(productDtos);
+
+            }
+            catch (Exception ex)
+            {
+
+                // Manejar la excepción y devolver una respuesta de error genérica
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
+            }
+        }
+
+
 
     }
 }

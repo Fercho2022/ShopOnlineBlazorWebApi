@@ -38,12 +38,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/DisplayError.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/ProductDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/Products.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/ProductsByCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNCeUNhdGVnb3J5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/Weather.razor]
@@ -73,3 +81,7 @@ build_metadata.AdditionalFiles.CssScope = b-p9f7rduw4v
 [D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Pages/ShoppingCart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcHBpbmdDYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-2o7k8o7qyw
+
+[D:/API-REST-NET/ShopOnlineBlazorWebApi/ShopOnline.Web/Shared/ProductCategoriesNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RDYXRlZ29yaWVzTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-qzyrdaa5ze

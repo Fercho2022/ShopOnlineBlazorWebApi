@@ -27,12 +27,38 @@
   },
   {
     "ContainingType": "ShopOnline.Api.Controllers.ProductController",
-    "Method": "GetProducts",
+    "Method": "GetItems",
     "RelativePath": "api/Product",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ShopOnline.Models.Dtos.ProductDto, ShopOnline.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShopOnline.Api.Controllers.ProductController",
+    "Method": "GetItemsByCategory",
+    "RelativePath": "api/Product/{categoryId}/GetItemsByCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[ShopOnline.Models.Dtos.ProductDto, ShopOnline.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
@@ -62,6 +88,26 @@
     "ReturnTypes": [
       {
         "Type": "ShopOnline.Models.Dtos.ProductDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShopOnline.Api.Controllers.ProductController",
+    "Method": "GetProductCategories",
+    "RelativePath": "api/Product/productCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ShopOnline.Models.Dtos.ProductCategoryDto, ShopOnline.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

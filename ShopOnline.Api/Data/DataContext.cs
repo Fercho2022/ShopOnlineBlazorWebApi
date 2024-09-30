@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Linq;
 using ShopOnline.Api.Entities;
 using System.Collections.Generic;
 using System.Reflection.Emit;
@@ -7,14 +8,32 @@ namespace ShopOnline.Api.Data
 {
     public class DataContext : DbContext
     {
+        //public class DataContext : DbContext: Define un contexto de datos para interactuar
+        //con la base de datos. DbContext es una clase base en Entity Framework Core que
+        //permite trabajar con datos, permitiendo realizar operaciones CRUD
+        //(Create, Read, Update, Delete).
+
+        //public DataContext(DbContextOptions<DataContext> options) : base(options):
+        //Este constructor recibe una instancia de DbContextOptions, que contiene la configuración
+        //para el contexto(como la cadena de conexión a la base de datos) y lo pasa al constructor
+        //de la clase base DbContext.
+
+        //Cuando creas una instancia de DataContext, este constructor es llamado.
+        //Aquí recibe un parámetro de tipo DbContextOptions<DataContext>, que contiene
+        //la configuración necesaria para que Entity Framework Core sepa cómo conectarse
+        //y trabajar con la base de datos.
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         //inserta una semilla para rellenar la base de datos
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //base.OnModelCreating(modelBuilder): Llama a la implementación predeterminada de
+            //OnModelCreating en la clase base DbContext antes de agregar tus configuraciones
+            //personalizadas.
             base.OnModelCreating(modelBuilder);
             //Products
             //Beauty Category
+            //Usa HasData para insertar semillas de datos en la base de datos. 
             modelBuilder.Entity<Product>().HasData(new Product
             {
                 Id = 1,
@@ -312,12 +331,20 @@ namespace ShopOnline.Api.Data
                 Name = "Shoes",
                 IconCSS = "fas fa-shoe-prints"
             });
-
+            //Define una relación entre CartItem y Product. Esto indica que cada CartItem
+            //tiene una referencia a un Product mediante una clave externa (ProductId).
+            //La relación es "uno a muchos" (un producto puede estar en muchos CartItems).
             modelBuilder.Entity<CartItem>()
                 .HasOne(ci => ci.Product)
                 .WithMany()
                 .HasForeignKey(ci => ci.ProductId);
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.ProductCategory)          // Un producto tiene una categoría
+                .WithMany(c => c.Products)        // Una categoría tiene muchos productos
+                .HasForeignKey(p => p.CategoryId); // La clave foránea es CategoryId
         }
+        //DbSet: Representa tablas de la base de datos que corresponden
+        //a entidades como Cart, Product, User, etc.
         public DbSet<Cart> Carts { get; set; }
 
         public DbSet<CartItem> CartItems { get; set; }

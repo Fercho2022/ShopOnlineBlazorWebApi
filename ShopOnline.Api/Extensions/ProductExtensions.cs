@@ -5,7 +5,7 @@ namespace ShopOnline.Api.Extensions
 {
     public static class ProductExtensions
     {
-        public static IEnumerable<ProductDto> ConvertToProductDto(this IEnumerable<Product> products, IEnumerable<ProductCategory> categories)
+        public static IEnumerable<ProductDto> ConvertToDto(this IEnumerable<Product> products)
         {
 
             // Mapear productos a ProductDto incluyendo el nombre de la categoría
@@ -17,13 +17,13 @@ namespace ShopOnline.Api.Extensions
                 ImageURL = product.ImageURL,
                 Price = product.Price,
                 Qty = product.Qty,
-                CategoryId = product.CategoryId,
-                CategoryName = categories.FirstOrDefault(category => category.Id == product.CategoryId)?.Name
+                CategoryId = product.ProductCategory.Id,
+                CategoryName = product.ProductCategory.Name
             }).ToList();
 
         }
 
-        public static ProductDto ConvertToProductDto(this Product product, ProductCategory category)
+        public static ProductDto ConvertToDto(this Product product)
         {
 
             // Mapear productos a ProductDto incluyendo el nombre de la categoría
@@ -35,8 +35,8 @@ namespace ShopOnline.Api.Extensions
                 ImageURL = product.ImageURL,
                 Price = product.Price,
                 Qty = product.Qty,
-                CategoryId = product.CategoryId,
-                CategoryName = category.Name
+                CategoryId = product.ProductCategory.Id,
+                CategoryName = product.ProductCategory.Name
             };
 
         }
@@ -103,5 +103,20 @@ namespace ShopOnline.Api.Extensions
                 TotalPrice = cartItem.Qty * product.Price,
             };
         }
+
+        public static IEnumerable<ProductCategoryDto> ConvertToDto(this IEnumerable<ProductCategory> productCategories)
+        {
+            return productCategories.Select(pc => new ProductCategoryDto
+            {
+                Id = pc.Id,
+                Name = pc.Name,
+                IconCSS = pc.IconCSS,
+
+            }).ToList();
+        }
+
+
+
     }
+
 }

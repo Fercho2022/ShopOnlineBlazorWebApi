@@ -74,7 +74,10 @@ else
     [Inject]
     public IShoppingCartService ShoppingCartService { get; set; }
 
-    public IEnumerable<CartItemDto> ShoppingCartItems { get; set; }
+    [Inject]
+    public IManageCartItemsLocalStorageService ManageCartItemsLocalStorageService { get; set; }
+
+    public List<CartItemDto> ShoppingCartItems { get; set; }
 
     public string ErrorMessage { get; set; }
 
@@ -88,7 +91,9 @@ else
     {
         try
         {
-            ShoppingCartItems = await ShoppingCartService.GetItems(HardCoded.UserId);
+            await ClearLocalStorage();
+
+            ShoppingCartItems = await ManageCartItemsLocalStorageService.GetCollection();
 
             CartChanged();
 
@@ -100,6 +105,29 @@ else
         }
     }
 
+    private void CartChanged()
+    {
+        CalculateCartSummaryTotal();
+        ShoppingCartService.RaiseEventOnShoppingCartChanged(TotalQuantity);
+    }
+
+    private void CalculateCartSummaryTotal()
+    {
+        SetTotalPrice();
+        SetTotalQuantity();
+    }
+
+    private void SetTotalPrice()
+    {
+        TotalPrice = ShoppingCartItems.Sum(p => p.TotalPrice).ToString("C");
+    }
+
+    private void SetTotalQuantity()
+    {
+        TotalQuantity = ShoppingCartItems.Sum(q => q.Qty);
+    }
+
+
     protected async Task DeleteCartItem_Click(int id)
     {
         var cartItemDto = await ShoppingCartService.DeleteItem(id);
@@ -110,6 +138,8 @@ else
 
             CartChanged();
         }
+
+        await ManageCartItemsLocalStorageService.SaveCollection(ShoppingCartItems);
 
     }
 
@@ -148,8 +178,6 @@ else
                 }
             }
 
-
-
         }
         catch (Exception)
         {
@@ -157,23 +185,6 @@ else
             throw;
         }
 
-
-    }
-
-    private void SetTotalPrice()
-    {
-        TotalPrice = ShoppingCartItems.Sum(p => p.TotalPrice).ToString("C");
-    }
-
-    private void SetTotalQuantity()
-    {
-        TotalQuantity = ShoppingCartItems.Sum(q => q.Qty);
-    }
-
-    private void CalculateCartSummaryTotal()
-    {
-        SetTotalPrice();
-        SetTotalQuantity();
     }
 
     private void UpdateItemTotalprice(CartItemDto cartItemDto)
@@ -189,6 +200,8 @@ else
         {
             item.TotalPrice = cartItemDto.Price * cartItemDto.Qty;
         }
+
+        ManageCartItemsLocalStorageService.SaveCollection(ShoppingCartItems);
 
     }
     private CartItemDto GetCartItem(int id)
@@ -207,11 +220,11 @@ else
         await Js.InvokeVoidAsync("MakeUpdateQtyButtonVisible", id, true);
     }
 
-    private void CartChanged()
-    {
-        CalculateCartSummaryTotal();
-        ShoppingCartService.RaiseEventOnShoppingCartChanged(TotalQuantity);
-    }
+   
 
-    
+    private async Task ClearLocalStorage()
+    {
+        await ManageCartItemsLocalStorageService.RemoveCollection();
+      
+    }
 }

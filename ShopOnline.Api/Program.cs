@@ -20,6 +20,12 @@ builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
 
 // Registro de servicios de MercadoPago
 
+//Entity Framework Core usa inyección de dependencias para configurar y manejar la
+//instancia de DataContext. Cuando configuras el contexto en tu aplicación, usualmente
+//lo haces en el archivo Startup.cs o en el program principal. Al usar este patrón de
+//inyección de dependencias, necesitas un constructor que acepte DbContextOptions, ya
+//que este es el mecanismo que usa EF Core para inyectar la configuración necesaria en
+//el contexto.
 
 builder.Services.AddDbContext<DataContext>(options =>
 {

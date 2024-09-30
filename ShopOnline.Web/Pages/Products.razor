@@ -29,6 +29,7 @@ else
             for (int i = 0; i < (categoryProducts.Count + itemsPerRow - 1) / itemsPerRow; i++)
             {
                 var productRowList = categoryProducts.Skip(i * itemsPerRow).Take(itemsPerRow).ToList();
+               
                 <div class="row mt-3">
                     <DisplayProduct Products="@productRowList"></DisplayProduct>
                 </div>
@@ -49,17 +50,27 @@ else
     [Inject]
     public IShoppingCartService ShoppingCartService { get; set; }
 
+    [Inject]
+    public IManageProductsLocalStorageService ManageProductsLocalStorageService { get; set; }
+
+    [Inject]
+    public IManageCartItemsLocalStorageService ManageCartItemsLocalStorageService { get; set; }
+
+
     public IEnumerable<ProductDto> Productos { get; set; }
 
+    public string ErrorMessage { get; set; }
 
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            Productos = await ProductService.GetItems();
+            await ClearLocalStorage();
 
-            var shoppingCartItems = await ShoppingCartService.GetItems(HardCoded.UserId);
+            Productos = await ManageProductsLocalStorageService.GetCollection();
+
+            var shoppingCartItems = await ManageCartItemsLocalStorageService.GetCollection();
 
             var totalQty=shoppingCartItems.Sum(i => i.Qty);
 
@@ -69,10 +80,17 @@ else
         catch (Exception ex)
         {
 
-            throw;
+            ErrorMessage = ex.Message;
         }
 
     }
 
+    private async Task ClearLocalStorage()
+    {
+        await ManageProductsLocalStorageService.RemoveCollection();
+        await ManageCartItemsLocalStorageService.RemoveCollection();
+    }
+
+   
 
 }

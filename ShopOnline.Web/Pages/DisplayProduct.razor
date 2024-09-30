@@ -1,25 +1,28 @@
 ﻿
-@foreach (var item in Products)
-{
+<div class="row">
+    @foreach (var item in Products)
+    {
 
-    <div class="col-md-3 mb-2">
+        <div class="col-md-3 mb-2">
 
-        <a href="/ProductDetails/@item.Id">
-            <div class="card">
-                <img class="img-thumbnail product-image" src="@item.ImageURL" />
-                <div class="card-body">
-                    <h5 class="card-title mb-3">
-                        @item.Name
-                    </h5>
-                    <p class="card-text">
-                        <b>@item.Price.ToString("C")</b>
+            <a href="/ProductDetails/@item.Id">
+                <div class="card">
+                    <img class="img-thumbnail product-image" src="@item.ImageURL" />
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">
+                            @item.Name
+                        </h5>
+                        <p class="card-text">
+                            <b>@item.Price.ToString("C")</b>
 
-                    </p>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </div>
-}
+            </a>
+        </div>
+    }
+</div>
+
 
 
 
